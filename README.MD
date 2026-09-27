@@ -36,11 +36,13 @@ pip install -r requirements.txt
 uvicorn main:app --reload
 ```
 
-Danach: [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
+Danach:
+- Oberflaeche: [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
+- Swagger-Doku: [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 
 ## Tech
 
-Python · FastAPI · uvicorn · pydantic
+Python · FastAPI · uvicorn · pydantic · HTML/CSS/JS (eigene UI unter static/index.html)
 
 ## Ausblick
 
