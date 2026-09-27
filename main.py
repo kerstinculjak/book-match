@@ -1,9 +1,14 @@
 from typing import Literal
 
 from fastapi import FastAPI
+from fastapi.responses import FileResponse
 from pydantic import BaseModel, Field
 
 app = FastAPI(title="LesegeschmackCheckerAPI")
+
+@app.get("/", include_in_schema=False)
+def ui():
+    return FileResponse("static/index.html")
 
 ## DEIN CODE BEGINNT HIER ##
 
